@@ -5,6 +5,10 @@
     color: white;
     font-family: "Open Sans",sans-serif;
 }
+img{
+    user-select: none;
+    -webkit-user-drag: none;
+}
 body{
     background-color: rgb(18, 18, 18);
     display: flex;
@@ -26,7 +30,8 @@ header{
 }
 header img{
     width: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    transition: width 0.15s ease;
 }
 header p{
     width: 210px;
@@ -116,6 +121,7 @@ header p{
     border-radius: 100px;
     font-weight: bold;
     transition: border-color 0.15s ease;
+    user-select: none;
 }
 .platform img{
     width: 21px;
@@ -145,8 +151,9 @@ footer{
 }
 .already-have{
     color: rgb(170, 170, 170);
-    margin-bottom: 20px;
+    margin-bottom: 22px;
     font-size: 15.5px;
+    font-weight: 500;
 }
 .already-have a{
     font-weight: 500;
@@ -157,4 +164,18 @@ footer{
 }
 .terms-text a{
     color: inherit;
+}
+@media screen and (min-width:768px)
+{
+    header img{
+        width: 42px;
+        margin-bottom: 20px;
+    }
+    header p{
+        font-size: 44px;
+        width: 310px;
+    }
+    .terms-text{
+        font-size: 12px;
+    }
 }
